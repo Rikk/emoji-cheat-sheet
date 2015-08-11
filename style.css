@@ -7,10 +7,15 @@ html {
 
 h1 {
   margin: 0;
-  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 38px;
   text-transform: uppercase;
-  font-weight: normal; }
+  -ms-transform-origin: 0 0;
+  -ms-transform: scaleX(.55);
+  -webkit-transform-origin: 0 0;
+  -webkit-transform: scaleX(.55);
+  transform-origin: 0 0;
+  transform: scaleX(.55);
+}
 
 a { color: inherit; }
   a:hover { color: #999; }
@@ -64,8 +69,8 @@ ul {
   border: 1px solid rgba(0,0,0,.2); }
   .search:focus {
     outline: none;
-    border-color: rgba(82, 168, 236, 0.8);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 4px rgba(82, 168, 236, 0.3); }
+    border-color: rgba(82, 168, 236, .8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 4px rgba(82, 168, 236, .3); }
   .search:-moz-placeholder { color: #a1a1a1; }
 
 @media screen and (max-width: 640px) {
